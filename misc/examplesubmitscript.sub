@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#These are PBS command
+
+#PBS -q batch
+#PBS -l nodes=1:ppn=1,walltime=5000
+#PBS -j oe
+#PBS -o myfirstjob.out
+#PBS -m abe -M youremail@okstate.edu
+
+cd $PBS_O_WORKDIR/  #This tells qsub to move 
+                    #to the directory that you 
+                    #submitted the script from.
+
+
+#Commands for your job go here:
+
+module load mathematica
+echo "Hello, I have loaded the Mathematica module, see:"
+module list
+echo "OK, my work here is done. Bye."
