@@ -18,7 +18,7 @@ Launch a terminal, type the following and hit enter:
 ```
 ssh username@cowboy.hpc.okstate.edu
 ```
-In the above example, 'username' is your username. For example, if your username was 'monkey,' you would type:
+In the above example, 'username' is your user name. For example, if your user name was 'monkey,' you would type:
 ```
 ssh monkey@cowboy.hpc.okstate.edu
 ```
@@ -35,6 +35,7 @@ Now that you have launched the terminal, follow the same directions as logging i
 
 First Time on Cowboy
 ====================
+Note: This tutorial is long, but there is some great information in it and we worked hard to make Cowboy as accessible as possible for new users. If you have some familiarity with Linux already you probably only need to skim the tutorial for Cowboy-specific information, but if you are new to Linux, you should take the time to work through the whole tutorial. We know life is busy so if you need to stop between sections, we've made it easy for you to do so. When you come back log into Cowboy and then hover your mouse over the next section in this tutorial. The command you need to get back where you left off will appear. Enter these commands into your Cowboy session and you will be ready to pick up where you left off.
 
 Changing your Password
 ----------------------
@@ -42,12 +43,12 @@ The first time you log into Cowboy, you should change your password from the def
 ```
 passwd
 ```
-You should see the following text (for the purposes of this tutorial we will use the example username monkey):
+You should see the following text (for the purposes of this tutorial we will use the example user name monkey):
 ```
 Changing password for user monkey.
 Current Password:
 ```
-Type in your current password (currently the default password assigned to you) and hit enter. You will then be prompted to enter a new password twice. From now on, you will log into Cowboy with this new password. Please note that Cowboy is accessible from any computer with an internet connection so please choose a **STRONG** password.
+Type in your current password (currently the default password assigned to you) and hit enter. You will then be prompted to enter a new password twice. From now on, you will log into Cowboy with this new password. Please note that Cowboy is accessible from any computer with an Internet connection so please choose a **STRONG** password.
 
 Notes on Using the Terminal
 ------------------
@@ -69,7 +70,7 @@ Enough talk, let's get our hands dirty and start learning how to actually use Co
 ```
 whoami
 ```
-This command is fairly well named. It returns your username. Let's move onto more interesting things. Input the following command:
+This command is fairly well named. It returns your user name. Let's move onto more interesting things. Input the following command:
 ```
 git clone git@github.com:OSU-HPCC/New-User-Tutorial.git
 ```
@@ -100,9 +101,9 @@ pwd
 
 File Systems and Changing Location
 ----------------------------------
-In the example above, `pwd` gave us a list sepearted by the '/' character. Think back to our example from Windows or Macintosh OS. When we need to find a file on these systems we double click on the *Hard Drive* icon in Macintosh OS or the *C:* drive in Windows. We are then presented with a list of sub directories and files. We can continue double-clicking on sub directories to see what is inside of successive folders. For example, if I wanted to open iTunes on my Macintosh, I could double click *Hard Drive*, then double click *Applications*, and finally double click iTunes. If I were to describe where iTunes is located on my computer I could make a list of directories and sub directories separated by '/': `/Hard_Drive/Applications`. The same principle applies here. `/home/monkey` tells us our location on the computer by showing us what folders we must travel through to get to the directory `monkey`. The very 'first' file on the computer is represented by the first '/' (all the other '/' are simply used as separators in our list of folders). From here we can travel along all the different possible paths to get to any file on the computer. Since in each directory you can choose from many different sub directories, the path you take can branch out in many directions. We use the analogy of a tree and describe the first '/' as the root, and the whole system of files as the 'directory tree.'
+In the example above, `pwd` gave us a list separated by the '/' character. Think back to our example from Windows or Macintosh OS. When we need to find a file on these systems we double click on the *Hard Drive* icon in Macintosh OS or the *C:* drive in Windows. We are then presented with a list of sub directories and files. We can continue double-clicking on sub directories to see what is inside of successive folders. For example, if I wanted to open iTunes on my Macintosh, I could double click *Hard Drive*, then double click *Applications*, and finally double click iTunes. If I were to describe where iTunes is located on my computer I could make a list of directories and sub directories separated by '/': `/Hard_Drive/Applications`. The same principle applies here. `/home/monkey` tells us our location on the computer by showing us what folders we must travel through to get to the directory `monkey`. The very 'first' file on the computer is represented by the first '/' (all the other '/' are simply used as separators in our list of folders). From here we can travel along all the different possible paths to get to any file on the computer. Since in each directory you can choose from many different sub directories, the path you take can branch out in many directions. We use the analogy of a tree and describe the first '/' as the root, and the whole system of files as the 'directory tree.'
 
-So right now we are in the `/home/monkey` directory. As usual, your path will have your username, not monkey. This directory is called your home directory. Every user gets a home directory when their account is setup on Cowboy. This directory has a quota of 25GB and you can use it to store your source code and executable programs. Please note that this directory is **NOT BACKED UP**, so please keep a backup of all your files on your personal computer. Each user on Cowboy is also given a folder in the `/scratch` directory. For user monkey, that directory is called `scratch/monkey`. This folder is for the user to store larege files and large collections of files. Please note, this file system is also **NOT BACKED UP** so please keep a personal backup of your files.
+So right now we are in the `/home/monkey` directory. As usual, your path will have your user name, not monkey. This directory is called your home directory. Every user gets a home directory when their account is setup on Cowboy. This directory has a quota of 25GB and you can use it to store your source code and executable programs. Please note that this directory is **NOT BACKED UP**, so please keep a backup of all your files on your personal computer. Each user on Cowboy is also given a folder in the `/scratch` directory. For user monkey, that directory is called `scratch/monkey`. This folder is for the user to store large files and large collections of files. Please note, this file system is also **NOT BACKED UP** so please keep a personal backup of your files.
 
 Lets check out our scratch folder. Type the following commands:
 ```
@@ -136,7 +137,7 @@ The `cat` command takes the content of a text file and prints it out to your scr
 ```
 ca
 ```
-We get a list of all possible command starting with 'ca':
+We get a list of all possible command starting with 'ca' (what you see may be a slight variation of this list):
 ```
 cacertdir_rehash    canberra-gtk-play   captoinfo
 cal                 cancel              cas
@@ -216,7 +217,7 @@ So we have edited `copynumber01.txt` and lets say that several weeks have passed
 grep 'Go Cowboys!' *
 copynumber01.txt:Go Cowboys!
 ```
-Notice, `grep` tells us what file our search can be found int. `grep` takes what is known as a regular expression and looks for it in a file or a list of files. Regular expressions are beyond the scope of this tutorial, but if you are interested you can check out the `additionalresources` directory in `misc`. For now, just know that you can put the text you want to search for in quotes and `grep` will try to match it in the list of files that you specify. Notice however, that I did not give `grep` a list of files, but instead used a '*' character. This is what is known as wildcard. '*' tells the computer to automatically fill in all possible files here. In this case, the Cowboy fills in all the 'copynumber...' files where the '*' was, which saves us lots of typing. Another important wildcard is '?'. While '*' can will be filled in by the computer with any number of characters, '?' tells the computer to fill in this spot with all possibilities for one character only. For example, we could repeat the above search using '?' with the following command:
+Notice, `grep` tells us what file our search can be found int. `grep` takes what is known as a regular expression and looks for it in a file or a list of files. Regular expressions are beyond the scope of this tutorial, but if you are interested you can check out the `additionalresources` directory in `misc`. For now, just know that you can put the text you want to search for in quotes and `grep` will try to match it in the list of files that you specify. Notice however, that I did not give `grep` a list of files, but instead used a '*' character. This is what is known as wild card. '*' tells the computer to automatically fill in all possible files here. In this case, the Cowboy fills in all the 'copynumber...' files where the '*' was, which saves us lots of typing. Another important wild card is '?'. While '*' can will be filled in by the computer with any number of characters, '?' tells the computer to fill in this spot with all possibilities for one character only. For example, we could repeat the above search using '?' with the following command:
 ```
 grep 'Go Cowboys!' copynumber??.txt
 ```
@@ -269,7 +270,7 @@ Modules
 
 Available Software
 ------------------
-We now know how to use Cowboy, but what good is using a supercomputer if we cannot use the software on it? Windows has the Start Menu and Macintosh OS has the launch bar, but how do we find out what programs or softwared are available on Cowboy when all we have is the command prompt? The answer is modules. Modules are an extremely powerful system that allows multiple users with different versions of software all to use the same machine at the same time, and it's how we will be using the software on Cowboy. First, it would be nice to know what software Cowboy has available for us to use:
+We now know how to use Cowboy, but what good is using a supercomputer if we cannot use the software on it? Windows has the Start Menu and Macintosh OS has the launch bar, but how do we find out what programs or software are available on Cowboy when all we have is the command prompt? The answer is modules. Modules are an extremely powerful system that allows multiple users with different versions of software all to use the same machine at the same time, and it's how we will be using the software on Cowboy. First, it would be nice to know what software Cowboy has available for us to use:
 ```
 module avail
 ```
@@ -348,7 +349,7 @@ Now we are presented with a detailed description and help specific to that parti
 
 Using Software
 --------------
-In order to use the software on Cowboy I need to 'load' the sofware module. We can see what software we have loaded by using the following command:
+In order to use the software on Cowboy I need to 'load' the software module. We can see what software we have loaded by using the following command:
 ```
 module list
 ```
@@ -387,7 +388,7 @@ Batch Scheduler and Submit Scripts
 
 Bash Scripts
 ------------
-So far we have entered one command at a time, but we can actually give the computer many commands all at once by using scripts. The basic idea behind a script is that we can type several commands and save them as a text file. Later, we tell the computer to execute the file and it executes all the commands inside the file. This is especially helpful if we need to have the computer do a simple task for a large number of repetitions. Let's look at an example script(`~/` is an abreviation that tells the computer to fill this symbol with the path to my home directroy):
+So far we have entered one command at a time, but we can actually give the computer many commands all at once by using scripts. The basic idea behind a script is that we can type several commands and save them as a text file. Later, we tell the computer to execute the file and it executes all the commands inside the file. This is especially helpful if we need to have the computer do a simple task for a large number of repetitions. Let's look at an example script(`~/` is an abbreviation that tells the computer to fill this symbol with the path to my home directory):
 ```
 cd ~/New-User-Tutorial/misc
 cat bashscriptexample.sh
@@ -424,13 +425,13 @@ This tells `qsub` how many compute nodes we want to request for our job and how 
 ```
 This tells `qsub` which queue to put your job in. Cowboy has four queues:
 
-- batch: The 'batch' queue is the default queue. The walltimelimit is 120 hours (120:00:00). If your job needs to run longer than this and your sofware does not have checkpoint/restart capabilities, please email hpcc<at>okstate.edu for assistance as far in advance of your need as possible.
+- batch: The 'batch' queue is the default queue. The wall time limit is 120 hours (120:00:00). If your job needs to run longer than this and your software does not have checkpoint/restart capabilities, please email hpcc<at>okstate.edu for assistance as far in advance of your need as possible.
 
-- express: The 'express' queue is for short jobs and debugging/testing scripts. The express queue contains 2 compute nodes and has a walltime limit of one hour (1:00:00).
+- express: The 'express' queue is for short jobs and debugging/testing scripts. The express queue contains 2 compute nodes and has a wall time limit of one hour (1:00:00).
 
-- bigmem: The 'bigmem'queue directs jobs to one of the two compute nodes that have 256 GB RAM and a NVIDIA Tesla C2075 GPU card. The walltime limit is 120 hours (120:00:00).
+- bigmem: The 'bigmem'queue directs jobs to one of the two compute nodes that have 256 GB RAM and a NVIDIA Tesla C2075 GPU card. The wall time limit is 120 hours (120:00:00).
 
-- killable: The 'killable' queue is for long running jobs that are unable to use a checkpoint/restart feature. The walltimelimit is 504 hours (504:00:00). Jobs in this queue are subject to being killed, at the discretion of HPCC admisnistrators, for hardware and software issues.
+- killable: The 'killable' queue is for long running jobs that are unable to use a checkpoint/restart feature. The wall time limit is 504 hours (504:00:00). Jobs in this queue are subject to being killed, at the discretion of HPCC administrators, for hardware and software issues.
 ```
 #PBS -o myfirstjob.out
 ```
@@ -458,7 +459,7 @@ It will give a number. This is your job number and it allows you to track your j
 ```
 showq -u monkey
 ```
-Shows all of your jobs that are on the queue. We can also see all the other jobs on the queue by leaving off the username option:
+Shows all of your jobs that are on the queue. We can also see all the other jobs on the queue by leaving off the user name option:
 ```
 showq
 ```
@@ -471,6 +472,10 @@ Finally, if we want to cancel our job, we use:
 qdel 123456
 ```
 This would remove my job from the queue if my job number was 123456.
+
+Checking on Results
+-------------------
+Alright, did you get an email from Cowboy? Remember that we told Cowboy to put the output from the program into a file named `myfirstjob.out`? Simply move to the directory where you submitted the script from and have a look at `myfirstjob.out` to see what happened while your program was running on the compute nodes.
 
 
 Additional Resources:
