@@ -485,40 +485,6 @@ Congratulations, you finished the tutorial. Please have a look at `misc/addition
 
 Contact Information:
 ====================
-**Dana Brunson, Ph.D.**
-Director
-High Performance Computing Center
-MSCS 106
-Oklahoma State University
-Stillwater, OK 74078
-Office: (405) 744-4455
-dana.brunson<at>okstate.edu
-
-**Jesse Schafer**
-Manager of Operations
-High Performance Computing Center
-MSCS 105
-Oklahoma State University
-Office: (405) 744-4435
-jessejs<at>okstate.edu
-
-**Evan Linde**
-Evan Linde
-Research Cyberinfrastructure Analyst
-High Performance Computing Center
-MSCS 107a
-Oklahoma State University
-Office: (405) 744-1455
-elinde<at>okstate.edu
-
-**Angela K. Naff**
-Angela K. Naff
-Program Coordinator
-High Performance Computing Center
-MSCS 107
-Oklahoma State University
-Office: (405) 744-1914
-angela.naff<at>okstate.edu
 
 For user-support or general information about OSU-HPCC, please contact the team:
 hpcc<at>okstate.edu
