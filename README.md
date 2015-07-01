@@ -9,7 +9,7 @@ Windows
 - Check to make sure that the *Connection Type* is **ssh** and the *Port* number is **22**.
 - To save your session for next time (so you don't have to retype each time) type a name into *Saved Sessions* and click *Save*. Next time you log in, all you will need to do is double click on the saved session name.
 - Click *Open* to open a connection with Cowboy. You will be asked for your password. **No characters will appear when you type in the password**. This is a security feature. Don't worry, just type the password you received when you set up your account and hit enter.
-- You should now have a command prompt. To log out, simply type exit or logout and hit enter.
+- You should now have a command prompt. To log out, simply type exit or logout and hit \<enter\>.
 
 [putty]: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
 
