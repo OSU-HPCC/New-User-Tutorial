@@ -4,6 +4,7 @@ Windows
 -------
 - If you are logging into cowboy from a Windows machine, you will need to install a program called putty. You can download putty [here][putty].
 - Once you have downloaded putty and started it, you should see a screen that looks something like this:
+  ![Putty](/misc/putty.JPG)
 - In the box labeled *Host Name*, type **cowboy.hpc.okstate.edu**.
 - Check to make sure that the *Connection Type* is **ssh** and the *Port* number is **22**.
 - To save your session for next time (so you don't have to retype each time) type a name into *Saved Sessions* and click *Save*. Next time you log in, all you will need to do is double click on the saved session name.
