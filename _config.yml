@@ -1,0 +1,13 @@
+# Site settings
+title: Cowboy New User Tutorial 
+email: hpcc@okstate.edu 
+description: > # this means to ignore newlines until "baseurl:"
+  Introduction to basic Linux command line usage and 
+  job submission for new HPC users of Cowboy.
+baseurl: "/New-User-Tutorial" # the subpath of your site, e.g. /blog/
+url: "http://OSU-HPCC.github.io" # the base hostname & protocol for your site
+#twitter_username: jekyllrb
+github_username:  OSU-HPCC
+
+# Build settings
+markdown: kramdown
