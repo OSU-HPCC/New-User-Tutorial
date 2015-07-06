@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the future site of HPCC's New User About page that I have not written yet. For the time being, check out our other webpage: [OSU-HPCC](http://hpc.it.okstate.edu/).
+Want to know more about us? Check out our official website: [OSU-HPCC](https://hpcc.okstate.edu/content/about-osu-hpcc).
 
 
