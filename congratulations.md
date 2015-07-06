@@ -11,6 +11,4 @@ Congratulations, you finished the tutorial. Please have a look at `misc/addition
 Contact Information:
 --------------------
 
-For user-support or general information about OSU-HPCC, please contact the team:
-hpcc\<at\>okstate.edu
-
+For user-support or general information about OSU-HPCC, please contact the team at the email address below.
