@@ -14,7 +14,7 @@ Windows
 - If you are logging into cowboy from a Windows machine, you will need to install a program called putty. You can download putty [here][putty].
 - Once you have downloaded putty and started it, you should see a screen that looks something like this:
 
-  ![Putty](New-User-Tutorial/img/putty.JPG)
+  ![Putty]({{ site.url }}/img/putty.JPG)
 
 
 - In the box labeled *Host Name*, type **cowboy.hpc.okstate.edu**.
