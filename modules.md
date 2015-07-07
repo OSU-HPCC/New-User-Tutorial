@@ -119,4 +119,4 @@ Now we have both Mathematica and MrBayes loaded. Feel free to use `module list` 
 
 	module purge
 
-[Next](submitscripts.html)
+[Next]({{ site.url }}{{ site.baseurl }}/submitscripts.html)
