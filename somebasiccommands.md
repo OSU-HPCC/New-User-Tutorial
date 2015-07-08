@@ -1,6 +1,6 @@
 ---
 layout: tutorial
-title: Some Basic Commands
+title: Basic Commands
 ---
 
 
