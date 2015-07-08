@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: tutorial
 title: Some Basic Commands
 ---
 
