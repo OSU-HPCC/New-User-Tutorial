@@ -209,5 +209,5 @@ Nice work, we've learned quite a few basic commands and you should feel comforta
 
 Once you find out all the new options for `ls` try them out. This is a great way to learn new commands. The only downside of `man` is that it can sometimes become a bit technical. If you find that the `man` page is not answering your questions, try googling the command with the word 'Linux'. Often the first link will be a page with a practical example of the command actually being used. Finally, if you enter a command and realized it was a mistake, you can always use \<ctrl-c\> to cancel whatever process the terminal is currently doing. Analogous to \<ctrl-alt-delete\> in Windows, \<ctrl-c\> is Linux's version of 'I'm just kidding, stop that!' It may take a moment or two for the system to respond so don't worry, you only need to use it once. That's all the basic commands we will cover in this tutorial. Next we will learn how to use the software that has been installed on the Cowboy system.
 
-[Next]({{ site.url }}{{ site.baseurl }}/modules.html)
+Click [here]({{ site.url }}{{ site.baseurl }}/modules.html) to continue.
 

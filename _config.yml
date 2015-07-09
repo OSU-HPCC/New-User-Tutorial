@@ -1,5 +1,5 @@
 # Site settings
-title: Cowboy New User Tutorial 
+title: OSU-HPCC New User Portal 
 email: hpcc@okstate.edu 
 description: > # this means to ignore newlines until "baseurl:"
   Introduction to basic Linux command line usage and 
@@ -12,3 +12,5 @@ github_username:  OSU-HPCC
 # Build settings
 markdown: kramdown
 
+# My variable for designating pages that are linked in the header.
+isinheader:

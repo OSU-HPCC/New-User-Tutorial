@@ -102,4 +102,4 @@ Checking on Results
 -------------------
 Alright, did you get an email from Cowboy? Remember that we told Cowboy to put the output from the program into a file named `myfirstjob.out`? Simply move to the directory where you submitted the script from and have a look at `myfirstjob.out` to see what happened while your program was running on the compute nodes.
 
-[Next]({{ site.url }}{{ site.baseurl }}/congratulations.html)
+We're almost [finished]({{ site.url }}{{ site.baseurl }}/congratulations.html).

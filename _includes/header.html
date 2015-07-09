@@ -16,9 +16,12 @@
       <div class="trigger">
         {% for page in site.pages %}
           {% if page.title %}
+          {% if page.isinheader %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
+          {% endif %}
         {% endfor %}
+        <a class="page-link" href="{{ "/loggingin.html" | prepend: site.baseurl }}">Tutorial</a>
       </div>
     </nav>
 
