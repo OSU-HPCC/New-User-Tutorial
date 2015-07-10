@@ -6,7 +6,7 @@ title: Logging In
 Windows
 -------
 - If you are logging into cowboy from a Windows machine, you will need to install a program called putty. You can download putty [here][putty].
-- Once you have downloaded putty and started it, you should see a screen that looks something like this:
+- Once you have downloaded putty and started it, you can place the file on your desktop and double click it to launch the program. You should see a screen that looks something like this:
 
   ![Puttyimg]({{ site.url }}{{ site.baseurl }}/img/putty.JPG)
 
@@ -44,7 +44,7 @@ Now that you have launched the terminal, follow the same directions as logging i
 
 First Time on Cowboy
 ====================
-Note: This tutorial is long, but there is some great information in it and we worked hard to make Cowboy as accessible as possible for new users. If you have some familiarity with Linux already you probably only need to skim the tutorial for Cowboy-specific information, but if you are new to Linux, you should take the time to work through the whole tutorial. We know life is busy so if you need to stop between sections, we have made it easy for you to do so. When you come back log into Cowboy and then hover your mouse over the next section in this tutorial. The command you need to get back where you left off will appear. Enter these commands into your Cowboy session and you will be ready to pick up where you left off.
+Note: This tutorial is long, but there is some great information in it and we worked hard to make Cowboy as accessible as possible for new users. If you have some familiarity with Linux already you probably only need to skim the tutorial for Cowboy-specific information, but if you are new to Linux, you should take the time to work through the whole tutorial. We know life is busy so we have tried to break up the tutorial into different pages so that you can take a break if you need to. 
 
 Changing your Password
 ----------------------

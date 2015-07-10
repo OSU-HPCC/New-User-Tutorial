@@ -37,13 +37,37 @@ In the name of education we have actually committed a supercomputer faux pas (in
 
 	cat examplesubmitscript.sub
 
+Your output should look like this:
+
+	#!/bin/bash
+	
+	#These are PBS command
+	
+	#PBS -q express
+	#PBS -l nodes=1:ppn=1,walltime=0:30:00
+	#PBS -j oe
+	#PBS -m abe -M youremail@okstate.edu
+	
+	cd $PBS_O_WORKDIR/  #This tells qsub to move 
+	                    #to the directory that you 
+	                    #submitted the script from.
+	
+	
+	#Commands for your job go here:
+	
+	module load mathematica
+	echo "Hello, I have loaded the Mathematica module, see:"
+	module list
+	echo "OK, my work here is done. Bye."
+
+
 As we can see, a submit script is basically a bash script, but there are a few extra lines that have been added for `qsub`. First, note that '#' is a comment marker in bash scripts. Anything typed after the '#' character is ignored by the computer. That is so humans can write notes in their files. This bash script is a little bit special. Since it is for `qsub` there are a few comment lines that are followed by `PBS`. These are special commands just for `qsub`, not for bash. Let's look at them:
 
-	#PBS -l nodes=1:ppn=1,walltime=5000
+	#PBS -l nodes=1:ppn=1,walltime=0:30:00
 
-This tells `qsub` how many compute nodes we want to request for our job and how many processors we want from each node. In this case `nodes=1` asks the scheduler for 1 compute node and `ppn=1` requests 1 processor from the compute node. `walltime` tells the computer the time limit at which it should kill the program.
+This tells `qsub` how many compute nodes we want to request for our job and how many processors we want from each node. In this case `nodes=1` asks the scheduler for 1 compute node and `ppn=1` requests 1 processor from the compute node. `walltime` tells the computer the time limit at which it should kill the program. In this case, `0:30:00` refers to 30 minutes.
 
-	#PBS -q
+	#PBS -q express
 
 This tells `qsub` which queue to put your job in. Cowboy has four queues:
 
@@ -55,11 +79,11 @@ This tells `qsub` which queue to put your job in. Cowboy has four queues:
 
 -	killable: The 'killable' queue is for long running jobs that are unable to use a checkpoint/restart feature. The wall time limit is 504 hours (504:00:00). Jobs in this queue are subject to being killed, at the discretion of HPCC administrators, for hardware and software issues.
 
-We also have the following line:
+You may also want to include a line that looks something like this even though we have not included it in this tutorial:
 
 	#PBS -o myfirstjob.out
 
-This tells `qsub` to put the output from your job in a text file called `myfirstjob.out`. Since you wont be able to see the result on your screen like when you execute commands in the login terminal, `qsub` will put everything that would have been printed to your screen into a text file for you to look at after the job has finished. This means you can go do something productive while Cowboy runs your job.
+This tells `qsub` to put the output from your job in a text file called `myfirstjob.out`. Since you wont be able to see the result on your screen like when you execute commands in the login terminal, `qsub` will put everything that would have been printed to your screen into a text file for you to look at after the job has finished. This means you can go do something productive while Cowboy runs your job. If you don't give `qsub` an output file name it will automatically put it in a file named according to the job number. For this tutorial, we want `qsub` to do the default behavior.
 
 	#PBS -j oe
 
@@ -100,6 +124,6 @@ This would remove my job from the queue if my job number was 123456.
 
 Checking on Results
 -------------------
-Alright, did you get an email from Cowboy? Remember that we told Cowboy to put the output from the program into a file named `myfirstjob.out`? Simply move to the directory where you submitted the script from and have a look at `myfirstjob.out` to see what happened while your program was running on the compute nodes.
+Alright, did you get an email from Cowboy? Cowboy should have put your output into a file named by the submit script name followed by the job number. Simply move to the directory where you submitted the script from and have a look at the file to see what happened while your program was running on the compute nodes.
 
-We're almost [finished]({{ site.url }}{{ site.baseurl }}/congratulations.html).
+Congratulations, you are just about [finished]({{ site.url }}{{ site.baseurl }}/congratulations.html).
