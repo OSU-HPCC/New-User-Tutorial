@@ -17,7 +17,7 @@ Windows
 - Click *Open* to open a connection with Cowboy. You will be asked for your password. **No characters will appear when you type in the password**. This is a security feature. Don't worry, just type the password you received when you set up your account and hit \<enter\>.
 - You should now have a command prompt. To log out, simply type `exit` or `logout` and hit \<enter\>.
 
-[putty]: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+[putty]: http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
 
 Linux
 -----
