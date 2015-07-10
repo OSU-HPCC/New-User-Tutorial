@@ -1,12 +1,19 @@
 .sidebar {
   position: fixed;
   width: 300px;
-  left: 0;
+  left: 100px;
+  top: 200px;
   min-height: 50%;
+  font-size: 20pt;
+ }
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
  }
 
 .tutorialcontent {
-  padding-left: 300px;
+  padding-left: 150px;
  }
 
 .tutorialtext {
