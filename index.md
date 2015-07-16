@@ -2,9 +2,15 @@
 layout: default
 ---
 
-**THIS SITE IS UNDER CONSTRUCTION WHICH MEANS SEVERAL LINKS AND OTHER FEATURES DO NOT YET WORK. PLEASE GO [HERE](https://hpcc.okstate.edu/content/new-user-tutorial) FOR OSU-HPCC'S CURRENT NEW USER TUTORIAL.**
-=============================================================================================
+Welcome
+-------
 
-This will be the future site of a welcome/greeting page with buttons to either launch the tutorial or check out installed software on Cowboy.
+Hi, welcome to the Cowboy New User Portal. This is where we post material that we hope will be helpful for our new OSU-HPCC users. Even if you are more experienced with high performance computing, you may find some of the information on this site useful. We hope you enjoy.
 
-[Under Construction Tutorial]({{ site.url }}{{ site.baseurl}}/loggingin.html)
+
+#OSU-HPCC Official Website
+
+#New User Tutorial
+
+#Available Software on Cowboy
+
