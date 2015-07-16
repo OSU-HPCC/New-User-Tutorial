@@ -83,7 +83,7 @@ We are given a brief description of a piece of software called MrBayes. We can s
 
 Now we are presented with a detailed description and help specific to that particular version of MrBayes. This is especially useful if we want to see whether or not the latest version of MrBayes has been installed on Cowboy. If you don't see the version of software that you need for your research and are an advanced user feel free to install the software in your home directory. Otherwise, you can contact us and we will be more than happy to install it for you. You can also see a current list of the software in installed on Cowboy [here][cowboysoftware].
 
-[cowboysoftware]: {{ site.url }}{{ site.baseurl }}/software.html
+[cowboysoftware]: https://github.com/OSU-HPCC/module-list/tree/master/availablesoftware
 
 Using Software
 --------------
