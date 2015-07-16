@@ -6,7 +6,7 @@ title: Logging In
 Windows
 -------
 - If you are logging into cowboy from a Windows machine, you will need to install a program called putty. You can download putty [here][putty].
-- Once you have downloaded putty and started it, you can place the file on your desktop and double click it to launch the program. You should see a screen that looks something like this:
+- Once you have downloaded putty, you can place the file on your desktop and double click it to launch the program. You should see a screen that looks something like this:
 
   ![Puttyimg]({{ site.url }}{{ site.baseurl }}/img/putty.JPG)
 
