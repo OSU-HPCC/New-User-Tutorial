@@ -9,24 +9,19 @@ Enough talk, let's get our hands dirty and start learning how to actually use Co
 
 	whoami
 
-This command is fairly well named. It returns your user name. Let's move onto more interesting things. Input the following command:
+This command is fairly well named. It returns your user name. Let's move onto more interesting things. Input the following commands:
 
-	git clone git@github.com:OSU-HPCC/New-User-Tutorial.git
+	wget https://github.com/OSU-HPCC/New-User-Tutorial/archive/master.zip
+	unzip master
 
-Don't worry about the details of this command yet. In short, this command downloads the files from this tutorial site into your user's home directory so that you can work with the examples that we have made for you. When you enter this command, you may get a message about adding unknown hosts. This is a security feature since you have never connected to our website from Cowboy before so it wants to make sure all is safe before connecting to a strange computer. Type `yes` and hit \<enter\>.
+If you want, you can copy the command straight from this browser window. Highlight each command and copy it just as you would normally. Then go to the terminal window and paste in the command using the special copy and paste commands that we discussed in [Logging In][logging]. Don't worry about the details of this command yet. In short, this command downloads the files from this tutorial site into your user's home directory so that you can work with the examples that we have made for you.
+
+[logging]: {{ site.url }}{{ site.baseurl }}/loggingin.html
 
 Listing Files
 -------------
 
-If all goes well you will see some text that looks something like this:
-
-	remote: Counting objects: 31, done.
-	remote: Compressing objects: 100% (29/29), done.
-	remote: Total 31 (delta 9), reused 0 (delta 0), pack-reused 0
-	Receiving objects: 100% (31/31), 11.51 KiB, done.
-	Resolving deltas: 100% (9/9), done.
-
-This means you have downloaded our files into your home directory. Lets take a look and see. Enter the following command:
+Lets take a look and see what you downloaded. Enter the following command:
 
 	ls
 
