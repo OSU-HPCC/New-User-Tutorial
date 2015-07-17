@@ -87,7 +87,7 @@ This tells `qsub` to put the output from your job in a text file called `myfirst
 
 	#PBS -j oe
 
-By default Linux separates normal output and error. This puts them together and makes sure that if anything goes wrong with your job you will have all the error messages saved in your output file.
+By default Linux treats the normal output to your screen and error output as two different objects. This command puts them together and makes sure that if anything goes wrong with your job you will have all the error messages saved in your output file. This helps both you and OSU-HPCC staff figure out how to fix any problems that may occur.
 
 	#PBS -m abe -M youremail@okstate.edu
 

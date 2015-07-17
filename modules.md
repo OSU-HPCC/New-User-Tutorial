@@ -73,7 +73,7 @@ The message is letting us know about a tool that is similar to `module avail`, b
 
 	module spider
 
-Notice now we get the list of installed software, but this time each piece of software has a brief description that tells us what each piece of software is. Instead of scrolling to the bottom of the list type `q` to exit the list. This time try:
+Notice now we get the list of installed software, but this time each piece of software has a brief description that tells us what each piece of software is. Instead of scrolling to the bottom of the list, type `q` to exit the list. This time try:
 
 	module spider mrbayes
 
